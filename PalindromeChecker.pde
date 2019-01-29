@@ -16,7 +16,7 @@ public void setup()
 }
 public boolean palindrome(String word)
 {
-  if(reverse(noSpaces(onlyLetters(word))).equals(word)){
+  if(reverse(noSpaces(onlyLetters(word))).toLowerCase().equals(noSpaces(onlyLetters(word)).toLowerCase())){
     return true;
   }
   else{
